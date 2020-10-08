@@ -5,7 +5,7 @@ const webpackNodeExternals = require('webpack-node-externals');
 
 const config = {
   target: 'node',
-  entry: './src/index.js',
+  entry: ['babel-polyfill', './src/index.js'],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'build')
